@@ -13,11 +13,53 @@
     '<path d="M0,450 Q50,440 100,450 T200,450 T300,450 T400,450 T500,450 T600,450 T700,450 T800,450 T900,450 T1000,450"/>' +
     '</g>'
   );
+  document.getElementById('s1-clouds').innerHTML = svgWrap(
+    '<defs>' +
+    '<filter id="cblur"><feGaussianBlur stdDeviation="16"/></filter>' +
+    '<radialGradient id="cgold" cx="50%" cy="50%" r="50%">' +
+    '<stop offset="0%" stop-color="#E8C060" stop-opacity="0.18"/>' +
+    '<stop offset="50%" stop-color="#E8C060" stop-opacity="0.07"/>' +
+    '<stop offset="100%" stop-color="#E8C060" stop-opacity="0"/>' +
+    '</radialGradient>' +
+    '</defs>' +
+    '<g filter="url(#cblur)">' +
+    '<ellipse cx="120" cy="290" rx="170" ry="40" fill="url(#cgold)"/>' +
+    '<ellipse cx="260" cy="275" rx="140" ry="35" fill="url(#cgold)"/>' +
+    '<ellipse cx="480" cy="300" rx="190" ry="48" fill="url(#cgold)"/>' +
+    '<ellipse cx="650" cy="280" rx="150" ry="38" fill="url(#cgold)"/>' +
+    '<ellipse cx="810" cy="295" rx="170" ry="42" fill="url(#cgold)"/>' +
+    '<ellipse cx="950" cy="275" rx="120" ry="30" fill="url(#cgold)"/>' +
+    '</g>'
+  );
+  document.getElementById('s1-birds').innerHTML = svgWrap(
+    '<g fill="#D4A017" opacity="0.2">' +
+    '<g transform="translate(220,200) scale(1.4)"><path d="M0,0 Q3,-4 7,-3 L10,-4 L9,-1 Q6,0 3,1 Q1,1 0,0 Z"/></g>' +
+    '<g transform="translate(280,175) scale(0.9)"><path d="M0,0 Q3,-4 7,-3 L10,-4 L9,-1 Q6,0 3,1 Q1,1 0,0 Z"/></g>' +
+    '<g transform="translate(170,215) scale(0.7)"><path d="M0,0 Q3,-4 7,-3 L10,-4 L9,-1 Q6,0 3,1 Q1,1 0,0 Z"/></g>' +
+    '</g>'
+  );
   document.getElementById('s2-egrets').innerHTML = svgWrap(
-    '<g fill="#F3F1E7" opacity="0.85">' +
-    '<path d="M300 300 q10 -10 20 0 q-10 4 -20 0"/>' +
-    '<path d="M340 320 q10 -10 20 0 q-10 4 -20 0"/>' +
-    '<path d="M700 290 q10 -10 20 0 q-10 4 -20 0"/>' +
+    '<g fill="#F3F1E7" opacity="0.7">' +
+    '<g transform="translate(180,340) scale(1.3)">' +
+    '<path d="M0,0 C0,-3 2,-6 2,-10 Q3,-12 4,-12 L5,-10 Q4,-8 3,-4 C2,-1 1,1 0,3 L-1,2 Z"/>' +
+    '<path d="M0,3 L0,8 M1,3 L1,7"/>' +
+    '</g>' +
+    '<g transform="translate(320,360) scale(1.1)">' +
+    '<path d="M0,0 C0,-3 2,-6 2,-10 Q3,-12 4,-12 L5,-10 Q4,-8 3,-4 C2,-1 1,1 0,3 L-1,2 Z"/>' +
+    '<path d="M0,3 L0,8 M1,3 L1,7"/>' +
+    '</g>' +
+    '<g transform="translate(680,330) scale(1.5)">' +
+    '<path d="M0,0 C0,-3 2,-6 2,-10 Q3,-12 4,-12 L5,-10 Q4,-8 3,-4 C2,-1 1,1 0,3 L-1,2 Z"/>' +
+    '<path d="M0,3 L0,8 M1,3 L1,7"/>' +
+    '</g>' +
+    '<g transform="translate(750,350) scale(0.9)">' +
+    '<path d="M0,0 C0,-3 2,-6 2,-10 Q3,-12 4,-12 L5,-10 Q4,-8 3,-4 C2,-1 1,1 0,3 L-1,2 Z"/>' +
+    '<path d="M0,3 L0,8 M1,3 L1,7"/>' +
+    '</g>' +
+    '<g transform="translate(540,370) scale(1)">' +
+    '<path d="M0,0 C0,-3 2,-6 2,-10 Q3,-12 4,-12 L5,-10 Q4,-8 3,-4 C2,-1 1,1 0,3 L-1,2 Z"/>' +
+    '<path d="M0,3 L0,8 M1,3 L1,7"/>' +
+    '</g>' +
     '</g>'
   );
   document.getElementById('s3-rain').innerHTML = svgWrap(
@@ -27,14 +69,55 @@
     '<line x1="760" y1="0" x2="730" y2="70"/><line x1="900" y1="20" x2="870" y2="90"/>' +
     '</g>'
   );
+  document.getElementById('s3-birds').innerHTML = svgWrap(
+    '<g fill="#A0B8B4" opacity="0.3">' +
+    '<g transform="translate(350,220) scale(1.1)"><path d="M0,0 Q3,-4 7,-3 L10,-4 L9,-1 Q6,0 3,1 Q1,1 0,0 Z"/></g>' +
+    '<g transform="translate(420,195) scale(0.8)"><path d="M0,0 Q3,-4 7,-3 L10,-4 L9,-1 Q6,0 3,1 Q1,1 0,0 Z"/></g>' +
+    '<g transform="translate(760,240) scale(1)"><path d="M0,0 Q3,-4 7,-3 L10,-4 L9,-1 Q6,0 3,1 Q1,1 0,0 Z"/></g>' +
+    '</g>'
+  );
   document.getElementById('s4-mist').innerHTML = svgWrap(
     '<rect x="0" y="120" width="1000" height="50" fill="#fff" opacity="0.1"/>' +
     '<rect x="0" y="200" width="1000" height="30" fill="#fff" opacity="0.06"/>'
+  );
+  document.getElementById('s4-clouds').innerHTML = svgWrap(
+    '<defs>' +
+    '<filter id="mblur"><feGaussianBlur stdDeviation="20"/></filter>' +
+    '<radialGradient id="cwhite" cx="50%" cy="50%" r="50%">' +
+    '<stop offset="0%" stop-color="#fff" stop-opacity="0.14"/>' +
+    '<stop offset="50%" stop-color="#fff" stop-opacity="0.05"/>' +
+    '<stop offset="100%" stop-color="#fff" stop-opacity="0"/>' +
+    '</radialGradient>' +
+    '</defs>' +
+    '<g filter="url(#mblur)">' +
+    '<ellipse cx="100" cy="230" rx="190" ry="42" fill="url(#cwhite)"/>' +
+    '<ellipse cx="280" cy="215" rx="160" ry="35" fill="url(#cwhite)"/>' +
+    '<ellipse cx="510" cy="240" rx="210" ry="48" fill="url(#cwhite)"/>' +
+    '<ellipse cx="740" cy="220" rx="180" ry="38" fill="url(#cwhite)"/>' +
+    '<ellipse cx="930" cy="230" rx="140" ry="32" fill="url(#cwhite)"/>' +
+    '</g>'
+  );
+  document.getElementById('s4-birds').innerHTML = svgWrap(
+    '<g fill="#fff" opacity="0.15">' +
+    '<g transform="translate(160,180) scale(1.3)"><path d="M0,0 Q3,-4 7,-3 L10,-4 L9,-1 Q6,0 3,1 Q1,1 0,0 Z"/></g>' +
+    '<g transform="translate(240,160) scale(0.9)"><path d="M0,0 Q3,-4 7,-3 L10,-4 L9,-1 Q6,0 3,1 Q1,1 0,0 Z"/></g>' +
+    '<g transform="translate(580,170) scale(1.5)"><path d="M0,0 Q3,-4 7,-3 L10,-4 L9,-1 Q6,0 3,1 Q1,1 0,0 Z"/></g>' +
+    '<g transform="translate(670,145) scale(0.8)"><path d="M0,0 Q3,-4 7,-3 L10,-4 L9,-1 Q6,0 3,1 Q1,1 0,0 Z"/></g>' +
+    '<g transform="translate(850,185) scale(1.1)"><path d="M0,0 Q3,-4 7,-3 L10,-4 L9,-1 Q6,0 3,1 Q1,1 0,0 Z"/></g>' +
+    '</g>'
   );
   document.getElementById('s5-waves').innerHTML = svgWrap(
     '<g stroke="#FFE3C2" stroke-width="2" opacity="0.28" fill="none">' +
     '<path d="M0,440 Q200,425 400,440 T800,440 T1000,440"/>' +
     '<path d="M0,470 Q200,455 400,470 T800,470 T1000,470"/>' +
+    '</g>'
+  );
+  document.getElementById('s5-birds').innerHTML = svgWrap(
+    '<g fill="#E8A060" opacity="0.25">' +
+    '<g transform="translate(300,260) scale(1.2)"><path d="M0,0 Q3,-4 7,-3 L10,-4 L9,-1 Q6,0 3,1 Q1,1 0,0 Z"/></g>' +
+    '<g transform="translate(380,240) scale(0.8)"><path d="M0,0 Q3,-4 7,-3 L10,-4 L9,-1 Q6,0 3,1 Q1,1 0,0 Z"/></g>' +
+    '<g transform="translate(720,270) scale(1.4)"><path d="M0,0 Q3,-4 7,-3 L10,-4 L9,-1 Q6,0 3,1 Q1,1 0,0 Z"/></g>' +
+    '<g transform="translate(820,245) scale(0.9)"><path d="M0,0 Q3,-4 7,-3 L10,-4 L9,-1 Q6,0 3,1 Q1,1 0,0 Z"/></g>' +
     '</g>'
   );
 
@@ -106,7 +189,7 @@
       var total = rect.height + vh;
       var progress = (vh - rect.top) / total;
       progress = Math.max(0, Math.min(1, progress));
-      var amplitude = 460;
+      var amplitude = 720;
       var y = (progress - 0.5) * amplitude * speed;
       el.style.transform = 'translate3d(0,' + y.toFixed(1) + 'px,0)';
     });

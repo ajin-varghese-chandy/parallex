@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>KAYAl</title>
+<title>KAYAL</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,600&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
@@ -16,10 +16,12 @@
 <div class="bg-fader" id="bgFader" aria-hidden="true"></div>
 
 <div id="bird" aria-hidden="true">
-  <svg viewBox="0 0 46 46" fill="none">
-    <path class="wing" d="M22 20 C13 12, 3 12, 0 17 C6 18, 13 20, 22 22 Z" fill="#1B1B1B"/>
-    <path class="wing" d="M22 20 C31 12, 41 12, 44 17 C38 18, 31 20, 22 22 Z" fill="#1B1B1B"/>
-    <ellipse cx="22" cy="21" rx="4.5" ry="3" fill="#1B1B1B"/>
+  <svg viewBox="0 0 72 44" fill="none">
+    <path class="wing" d="M34 20 C28 6, 14 0, 2 2 C12 6, 22 12, 34 20 Z" fill="#121212"/>
+    <path class="wing" d="M34 20 C28 34, 14 40, 2 38 C12 34, 22 28, 34 20 Z" fill="#121212"/>
+    <path d="M26 22 C34 26, 44 24, 48 20 Q52 17 56 18 L62 17 L56 15 Q50 14 44 16 C38 17, 32 17, 26 18 Z" fill="#121212"/>
+    <path d="M26 18 L2 12 L10 18 Z" fill="#121212"/>
+    <path d="M26 22 L2 28 L10 22 Z" fill="#121212"/>
   </svg>
 </div>
 
@@ -43,8 +45,10 @@
 <main>
 
   <section class="stop" id="s1" data-elev-min="0" data-elev-max="-1" data-time="5:40 AM" data-time-end="7:10 AM" data-dist-min="0" data-dist-max="14" data-name="Alappuzha Backwaters">
-    <div class="pl-photo" data-speed="0.35"></div>
-    <div class="pl" data-speed="0.75" id="s1-water"></div>
+    <div class="pl-photo" data-speed="0.18"></div>
+    <div class="pl" data-speed="0.9" id="s1-water"></div>
+    <div class="pl" data-speed="0.5" id="s1-clouds"></div>
+    <div class="pl" data-speed="0.7" id="s1-birds"></div>
     <div class="stop-inner">
       <div class="stop-index">01 — Alappuzha Backwaters</div>
       <h2>Where the mist hasn't lifted yet</h2>
@@ -56,8 +60,8 @@
   </section>
 
   <section class="stop" id="s2" data-elev-min="-1" data-elev-max="-2.2" data-time="7:10 AM" data-time-end="9:00 AM" data-dist-min="14" data-dist-max="31" data-name="Kuttanad Paddy Fields">
-    <div class="pl-photo" data-speed="0.35"></div>
-    <div class="pl" data-speed="0.8" id="s2-egrets"></div>
+    <div class="pl-photo" data-speed="0.18"></div>
+    <div class="pl" data-speed="0.95" id="s2-egrets"></div>
     <div class="stop-inner">
       <div class="stop-index">02 — Kuttanad Paddy Fields</div>
       <h2>Farming below the sea</h2>
@@ -69,8 +73,9 @@
   </section>
 
   <section class="stop" id="s3" data-elev-min="-2.2" data-elev-max="900" data-time="9:00 AM" data-time-end="1:00 PM" data-dist-min="31" data-dist-max="98" data-name="Western Ghats — Monsoon">
-    <div class="pl-photo" data-speed="0.3"></div>
-    <div class="pl" data-speed="0.75" id="s3-rain"></div>
+    <div class="pl-photo" data-speed="0.15"></div>
+    <div class="pl" data-speed="0.85" id="s3-rain"></div>
+    <div class="pl" data-speed="0.65" id="s3-birds"></div>
     <div class="stop-inner">
       <div class="stop-index">03 — Western Ghats, Monsoon</div>
       <h2>The road climbs into rain</h2>
@@ -82,8 +87,10 @@
   </section>
 
   <section class="stop" id="s4" data-elev-min="900" data-elev-max="1600" data-time="1:00 PM" data-time-end="4:00 PM" data-dist-min="98" data-dist-max="132" data-name="Munnar Tea Hills">
-    <div class="pl-photo" data-speed="0.3"></div>
-    <div class="pl" data-speed="0.7" id="s4-mist"></div>
+    <div class="pl-photo" data-speed="0.15"></div>
+    <div class="pl" data-speed="0.85" id="s4-mist"></div>
+    <div class="pl" data-speed="0.5" id="s4-clouds"></div>
+    <div class="pl" data-speed="0.6" id="s4-birds"></div>
     <div class="stop-inner">
       <div class="stop-index">04 — Munnar Tea Hills</div>
       <h2>Rows planted by hand, a century ago</h2>
@@ -95,8 +102,9 @@
   </section>
 
   <section class="stop" id="s5" data-elev-min="1600" data-elev-max="40" data-time="4:00 PM" data-time-end="6:30 PM" data-dist-min="132" data-dist-max="210" data-name="Varkala Sea Cliffs">
-    <div class="pl-photo" data-speed="0.3"></div>
-    <div class="pl" data-speed="0.75" id="s5-waves"></div>
+    <div class="pl-photo" data-speed="0.18"></div>
+    <div class="pl" data-speed="0.9" id="s5-waves"></div>
+    <div class="pl" data-speed="0.65" id="s5-birds"></div>
     <div class="stop-inner">
       <div class="stop-index">05 — Varkala Sea Cliffs</div>
       <h2>The hills give way to a red cliff and the sea</h2>
