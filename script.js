@@ -36,6 +36,25 @@
     '<g transform="translate(220,200) scale(1.4)"><path d="M0,0 Q3,-4 7,-3 L10,-4 L9,-1 Q6,0 3,1 Q1,1 0,0 Z"/></g>' +
     '<g transform="translate(280,175) scale(0.9)"><path d="M0,0 Q3,-4 7,-3 L10,-4 L9,-1 Q6,0 3,1 Q1,1 0,0 Z"/></g>' +
     '<g transform="translate(170,215) scale(0.7)"><path d="M0,0 Q3,-4 7,-3 L10,-4 L9,-1 Q6,0 3,1 Q1,1 0,0 Z"/></g>' +
+    '<g transform="translate(550,190) scale(1.2)"><path d="M0,0 Q3,-4 7,-3 L10,-4 L9,-1 Q6,0 3,1 Q1,1 0,0 Z"/></g>' +
+    '<g transform="translate(720,210) scale(0.8)"><path d="M0,0 Q3,-4 7,-3 L10,-4 L9,-1 Q6,0 3,1 Q1,1 0,0 Z"/></g>' +
+    '<g transform="translate(860,180) scale(1)"><path d="M0,0 Q3,-4 7,-3 L10,-4 L9,-1 Q6,0 3,1 Q1,1 0,0 Z"/></g>' +
+    '</g>'
+  );
+  document.getElementById('s1-rain').innerHTML = svgWrap(
+    '<g class="rain-group">' +
+    '<g stroke="#C8D8D4" stroke-width="2" opacity="0.3" stroke-linecap="round">' +
+    '<line x1="80" y1="0" x2="60" y2="50"/><line x1="200" y1="20" x2="180" y2="70"/>' +
+    '<line x1="350" y1="10" x2="330" y2="60"/><line x1="500" y1="0" x2="480" y2="50"/>' +
+    '<line x1="640" y1="30" x2="620" y2="80"/><line x1="780" y1="10" x2="760" y2="60"/>' +
+    '<line x1="920" y1="20" x2="900" y2="70"/>' +
+    '</g>' +
+    '<g stroke="#C8D8D4" stroke-width="2" opacity="0.3" stroke-linecap="round" transform="translate(0,-120)">' +
+    '<line x1="80" y1="0" x2="60" y2="50"/><line x1="200" y1="20" x2="180" y2="70"/>' +
+    '<line x1="350" y1="10" x2="330" y2="60"/><line x1="500" y1="0" x2="480" y2="50"/>' +
+    '<line x1="640" y1="30" x2="620" y2="80"/><line x1="780" y1="10" x2="760" y2="60"/>' +
+    '<line x1="920" y1="20" x2="900" y2="70"/>' +
+    '</g>' +
     '</g>'
   );
   document.getElementById('s2-egrets').innerHTML = svgWrap(
@@ -63,10 +82,25 @@
     '</g>'
   );
   document.getElementById('s3-rain').innerHTML = svgWrap(
-    '<g stroke="#CFE8E4" stroke-width="2" opacity="0.32" stroke-linecap="round">' +
-    '<line x1="120" y1="0" x2="90" y2="70"/><line x1="260" y1="30" x2="230" y2="100"/>' +
-    '<line x1="420" y1="10" x2="390" y2="80"/><line x1="600" y1="40" x2="570" y2="110"/>' +
-    '<line x1="760" y1="0" x2="730" y2="70"/><line x1="900" y1="20" x2="870" y2="90"/>' +
+    '<g class="rain-group">' +
+    '<g stroke="#CFE8E4" stroke-width="2" opacity="0.35" stroke-linecap="round">' +
+    '<line x1="40" y1="0" x2="10" y2="70"/><line x1="120" y1="0" x2="90" y2="70"/>' +
+    '<line x1="200" y1="20" x2="170" y2="90"/><line x1="260" y1="30" x2="230" y2="100"/>' +
+    '<line x1="340" y1="10" x2="310" y2="80"/><line x1="420" y1="10" x2="390" y2="80"/>' +
+    '<line x1="500" y1="5" x2="470" y2="75"/><line x1="600" y1="40" x2="570" y2="110"/>' +
+    '<line x1="680" y1="0" x2="650" y2="70"/><line x1="760" y1="0" x2="730" y2="70"/>' +
+    '<line x1="840" y1="15" x2="810" y2="85"/><line x1="900" y1="20" x2="870" y2="90"/>' +
+    '<line x1="960" y1="5" x2="930" y2="75"/>' +
+    '</g>' +
+    '<g stroke="#CFE8E4" stroke-width="2" opacity="0.35" stroke-linecap="round" transform="translate(0,-140)">' +
+    '<line x1="40" y1="0" x2="10" y2="70"/><line x1="120" y1="0" x2="90" y2="70"/>' +
+    '<line x1="200" y1="20" x2="170" y2="90"/><line x1="260" y1="30" x2="230" y2="100"/>' +
+    '<line x1="340" y1="10" x2="310" y2="80"/><line x1="420" y1="10" x2="390" y2="80"/>' +
+    '<line x1="500" y1="5" x2="470" y2="75"/><line x1="600" y1="40" x2="570" y2="110"/>' +
+    '<line x1="680" y1="0" x2="650" y2="70"/><line x1="760" y1="0" x2="730" y2="70"/>' +
+    '<line x1="840" y1="15" x2="810" y2="85"/><line x1="900" y1="20" x2="870" y2="90"/>' +
+    '<line x1="960" y1="5" x2="930" y2="75"/>' +
+    '</g>' +
     '</g>'
   );
   document.getElementById('s3-birds').innerHTML = svgWrap(
@@ -74,6 +108,9 @@
     '<g transform="translate(350,220) scale(1.1)"><path d="M0,0 Q3,-4 7,-3 L10,-4 L9,-1 Q6,0 3,1 Q1,1 0,0 Z"/></g>' +
     '<g transform="translate(420,195) scale(0.8)"><path d="M0,0 Q3,-4 7,-3 L10,-4 L9,-1 Q6,0 3,1 Q1,1 0,0 Z"/></g>' +
     '<g transform="translate(760,240) scale(1)"><path d="M0,0 Q3,-4 7,-3 L10,-4 L9,-1 Q6,0 3,1 Q1,1 0,0 Z"/></g>' +
+    '<g transform="translate(140,250) scale(0.6)"><path d="M0,0 Q3,-4 7,-3 L10,-4 L9,-1 Q6,0 3,1 Q1,1 0,0 Z"/></g>' +
+    '<g transform="translate(580,180) scale(1.3)"><path d="M0,0 Q3,-4 7,-3 L10,-4 L9,-1 Q6,0 3,1 Q1,1 0,0 Z"/></g>' +
+    '<g transform="translate(910,210) scale(0.7)"><path d="M0,0 Q3,-4 7,-3 L10,-4 L9,-1 Q6,0 3,1 Q1,1 0,0 Z"/></g>' +
     '</g>'
   );
   document.getElementById('s4-mist').innerHTML = svgWrap(
@@ -104,6 +141,25 @@
     '<g transform="translate(580,170) scale(1.5)"><path d="M0,0 Q3,-4 7,-3 L10,-4 L9,-1 Q6,0 3,1 Q1,1 0,0 Z"/></g>' +
     '<g transform="translate(670,145) scale(0.8)"><path d="M0,0 Q3,-4 7,-3 L10,-4 L9,-1 Q6,0 3,1 Q1,1 0,0 Z"/></g>' +
     '<g transform="translate(850,185) scale(1.1)"><path d="M0,0 Q3,-4 7,-3 L10,-4 L9,-1 Q6,0 3,1 Q1,1 0,0 Z"/></g>' +
+    '<g transform="translate(420,155) scale(1)"><path d="M0,0 Q3,-4 7,-3 L10,-4 L9,-1 Q6,0 3,1 Q1,1 0,0 Z"/></g>' +
+    '<g transform="translate(760,190) scale(0.6)"><path d="M0,0 Q3,-4 7,-3 L10,-4 L9,-1 Q6,0 3,1 Q1,1 0,0 Z"/></g>' +
+    '<g transform="translate(940,160) scale(1.2)"><path d="M0,0 Q3,-4 7,-3 L10,-4 L9,-1 Q6,0 3,1 Q1,1 0,0 Z"/></g>' +
+    '</g>'
+  );
+  document.getElementById('s4-rain').innerHTML = svgWrap(
+    '<g class="rain-group">' +
+    '<g stroke="#B8CCD0" stroke-width="1.5" opacity="0.2" stroke-linecap="round">' +
+    '<line x1="60" y1="0" x2="40" y2="55"/><line x1="180" y1="10" x2="160" y2="65"/>' +
+    '<line x1="320" y1="0" x2="300" y2="55"/><line x1="460" y1="25" x2="440" y2="80"/>' +
+    '<line x1="580" y1="5" x2="560" y2="60"/><line x1="720" y1="15" x2="700" y2="70"/>' +
+    '<line x1="850" y1="0" x2="830" y2="55"/><line x1="960" y1="20" x2="940" y2="75"/>' +
+    '</g>' +
+    '<g stroke="#B8CCD0" stroke-width="1.5" opacity="0.2" stroke-linecap="round" transform="translate(0,-120)">' +
+    '<line x1="60" y1="0" x2="40" y2="55"/><line x1="180" y1="10" x2="160" y2="65"/>' +
+    '<line x1="320" y1="0" x2="300" y2="55"/><line x1="460" y1="25" x2="440" y2="80"/>' +
+    '<line x1="580" y1="5" x2="560" y2="60"/><line x1="720" y1="15" x2="700" y2="70"/>' +
+    '<line x1="850" y1="0" x2="830" y2="55"/><line x1="960" y1="20" x2="940" y2="75"/>' +
+    '</g>' +
     '</g>'
   );
   document.getElementById('s5-waves').innerHTML = svgWrap(
@@ -112,12 +168,31 @@
     '<path d="M0,470 Q200,455 400,470 T800,470 T1000,470"/>' +
     '</g>'
   );
+  document.getElementById('s5-rain').innerHTML = svgWrap(
+    '<g class="rain-group">' +
+    '<g stroke="#D4A090" stroke-width="2" opacity="0.2" stroke-linecap="round">' +
+    '<line x1="100" y1="0" x2="75" y2="60"/><line x1="250" y1="15" x2="225" y2="75"/>' +
+    '<line x1="400" y1="5" x2="375" y2="65"/><line x1="550" y1="25" x2="525" y2="85"/>' +
+    '<line x1="680" y1="0" x2="655" y2="60"/><line x1="820" y1="10" x2="795" y2="70"/>' +
+    '<line x1="940" y1="20" x2="915" y2="80"/>' +
+    '</g>' +
+    '<g stroke="#D4A090" stroke-width="2" opacity="0.2" stroke-linecap="round" transform="translate(0,-120)">' +
+    '<line x1="100" y1="0" x2="75" y2="60"/><line x1="250" y1="15" x2="225" y2="75"/>' +
+    '<line x1="400" y1="5" x2="375" y2="65"/><line x1="550" y1="25" x2="525" y2="85"/>' +
+    '<line x1="680" y1="0" x2="655" y2="60"/><line x1="820" y1="10" x2="795" y2="70"/>' +
+    '<line x1="940" y1="20" x2="915" y2="80"/>' +
+    '</g>' +
+    '</g>'
+  );
   document.getElementById('s5-birds').innerHTML = svgWrap(
     '<g fill="#E8A060" opacity="0.25">' +
     '<g transform="translate(300,260) scale(1.2)"><path d="M0,0 Q3,-4 7,-3 L10,-4 L9,-1 Q6,0 3,1 Q1,1 0,0 Z"/></g>' +
     '<g transform="translate(380,240) scale(0.8)"><path d="M0,0 Q3,-4 7,-3 L10,-4 L9,-1 Q6,0 3,1 Q1,1 0,0 Z"/></g>' +
     '<g transform="translate(720,270) scale(1.4)"><path d="M0,0 Q3,-4 7,-3 L10,-4 L9,-1 Q6,0 3,1 Q1,1 0,0 Z"/></g>' +
     '<g transform="translate(820,245) scale(0.9)"><path d="M0,0 Q3,-4 7,-3 L10,-4 L9,-1 Q6,0 3,1 Q1,1 0,0 Z"/></g>' +
+    '<g transform="translate(160,250) scale(1.1)"><path d="M0,0 Q3,-4 7,-3 L10,-4 L9,-1 Q6,0 3,1 Q1,1 0,0 Z"/></g>' +
+    '<g transform="translate(520,230) scale(0.7)"><path d="M0,0 Q3,-4 7,-3 L10,-4 L9,-1 Q6,0 3,1 Q1,1 0,0 Z"/></g>' +
+    '<g transform="translate(920,260) scale(1)"><path d="M0,0 Q3,-4 7,-3 L10,-4 L9,-1 Q6,0 3,1 Q1,1 0,0 Z"/></g>' +
     '</g>'
   );
 

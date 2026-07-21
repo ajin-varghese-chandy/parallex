@@ -115,6 +115,14 @@ a{color:inherit;}
 .hero h1{ position:relative; z-index:2; font-family:var(--font-display); font-size:clamp(3rem, 9vw, 6.5rem); font-weight:600; letter-spacing:-.01em; line-height:.95; color:var(--ink); }
 .hero p{ position:relative; z-index:2; margin-top:1.4rem; max-width:38ch; color:var(--ink-dim); font-size:1.05rem; line-height:1.65; }
 
+/* ---------- Rain animation ---------- */
+.rain-group{ animation:rain-fall linear infinite; }
+#s1-rain .rain-group{ animation-duration:2.8s; }
+#s3-rain .rain-group{ animation-duration:1.6s; }
+#s4-rain .rain-group{ animation-duration:2.4s; }
+#s5-rain .rain-group{ animation-duration:3.2s; }
+@keyframes rain-fall{ 0%{transform:translateY(0);} 100%{transform:translateY(120px);} }
+
 /* ---------- Sections ---------- */
 .stop{ position:relative; min-height:100vh; display:flex; align-items:center; padding:6rem 2rem; z-index:2; overflow:hidden; }
 #s1{ background:var(--c1); } #s2{ background:var(--c2); } #s3{ background:var(--c3); }
