@@ -38,12 +38,13 @@ a{color:inherit;}
 
 /* ---------- Persistent bird ---------- */
 #bird{
-  position:fixed; left:14%; top:32%; width:44px; height:44px; z-index:6;
+  position:fixed; left:14%; top:32%; width:100px; height:100px; z-index:6;
   pointer-events:none;
   filter:drop-shadow(0 2px 6px rgba(0,0,0,0.5));
   transition:top .25s ease-out, left .25s ease-out;
 }
 #bird svg{width:100%;height:100%;display:block;}
+#bird svg path{fill:var(--bird-color,#121212);}
 #bird .wing{ transform-origin:34px 20px; animation:flap 1.3s ease-in-out infinite; }
 @keyframes flap{ 0%,100%{transform:rotate(0deg);} 50%{transform:rotate(-18deg);} }
 

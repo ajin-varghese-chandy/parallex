@@ -308,6 +308,11 @@
     return h12 + ':' + (m<10?'0':'') + m + ' ' + ap;
   }
 
+  var birdColors = {
+    s1:'#7EC8D4', s2:'#7CD488', s3:'#70A0A8',
+    s4:'#88C498', s5:'#E8A060', s6:'#D4A017'
+  };
+
   function updateJourney(){
     var vh = window.innerHeight;
     var center = vh * 0.5;
@@ -320,6 +325,11 @@
         progress = clamp((center - r.top) / r.height, 0, 1);
         break;
       }
+    }
+
+    if(current){
+      var id = current.id;
+      bird.style.setProperty('--bird-color', birdColors[id] || '#D4A017');
     }
 
     if(current && current.hasAttribute('data-elev-min')){
